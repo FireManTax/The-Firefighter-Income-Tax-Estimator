@@ -86,10 +86,40 @@ Colorado Edition — 2026 Federal & State Tax Law (Projected)
   <summary>How overtime income is taxed</summary>
   <p class="note">
     Overtime pay is fully taxable under current federal and Colorado tax law.
-    No enacted law makes overtime income tax-free.
   </p>
   <p class="note">
-    Payroll systems often withhold more tax on overtime because they annualize
-    high-earning pay periods.
+    Payroll withholding may appear higher due to income annualization.
   </p>
-  <p cl
+</details>
+</div>
+
+<!-- FILING STATUS -->
+<div class="section">
+<h2>Filing Status</h2>
+<select id="filingStatus">
+  <option value="single">Single</option>
+  <option value="married">Married Filing Jointly</option>
+</select>
+</div>
+
+<!-- DEPENDENTS -->
+<div class="section">
+<h2>Dependents</h2>
+<label>Federal Dependents <input type="number" id="fedDependents" value="0" min="0"></label>
+<label>Colorado Dependents <input type="number" id="coDependents" value="0" min="0"></label>
+</div>
+
+<!-- STATE -->
+<div class="section">
+<h2>Work / Resident State</h2>
+<select id="state">
+  <option value="CO">Colorado</option>
+  <option value="none">No State Income Tax</option>
+</select>
+</div>
+
+<!-- EARNINGS -->
+<div class="section">
+<h2>Earnings</h2>
+<label>Base Pay <input type="number" id="basePay" value="0"></label>
+<label>Overtime Pay <input type="number"
